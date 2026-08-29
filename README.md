@@ -1,29 +1,20 @@
-# Jarvis AI OS
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-A full-stack, hacker-themed, multi-agent AI operating system built with React, Vite, Node.js, and live-build.
+# Run and deploy your AI Studio app
 
-## Web Application Development
+This contains everything you need to run your app locally.
 
-To run the web application locally for development:
+View your app in AI Studio: https://ai.studio/apps/715888f9-9db1-4220-a1c5-70ba07e009d0
 
-```bash
-# Install dependencies
-pnpm install
+## Run Locally
 
-# Start development server
-pnpm run dev
-```
+**Prerequisites:**  Node.js
 
-## Creating a Bootable USB Pendrive
 
-This repository is configured to automatically generate a bootable `.iso` file every time code is pushed to the `main` branch.
-
-To get your bootable ISO:
-1. Go to the **Actions** tab in this GitHub repository.
-2. Click on the latest **Build Jarvis OS ISO** workflow run.
-3. Scroll down to the **Artifacts** section and download the `jarvis-os-iso` file.
-4. Use a tool like [Rufus](https://rufus.ie/) (on Windows) or [BalenaEtcher](https://etcher.balena.io/) (on Windows/Mac/Linux) to flash this ISO file onto your USB pendrive.
-5. Plug the pendrive into a computer, reboot, and select the pendrive from the boot menu. The OS will automatically launch into the Jarvis UI in full-screen kiosk mode!
-
-### How it works
-The OS is built on Debian Linux. During the build process, it compiles this node.js/React application and creates systemd services to launch the backend, and configures Openbox window manager to automatically launch Chromium in kiosk mode pointing to the local Jarvis backend.
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

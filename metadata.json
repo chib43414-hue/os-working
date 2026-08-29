@@ -1,0 +1,6 @@
+{
+  "name": "SafeAgents Backend & Hub",
+  "description": "Enterprise-grade safe backend logic and execution platform for 10 autonomous agents: System Monitor, Log Analyzer, Process Manager, File Analyzer, Code Assistant, Database Query, Data Transformer, Content Analyzer, Regex Tester, and System Optimizer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
